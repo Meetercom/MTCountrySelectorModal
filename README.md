@@ -1,13 +1,15 @@
-EMCCountryPickerController
+MTCountrySelectorModal
 ==========================
 
-`EMCCountryPickerController` is a view controller that allow users to choose
-a country from a searchable list.  The available countries are taken from the
+`MTCountrySelectorModal` is a view controller that allow users to choose
+a country from a list.  The available countries are taken from the
 [ISO 3166-1 standard][iso3166], whose [ISO 3166-1 alpha-2][iso31662] two-letter
 country codes are used by the API to represent countries.
 
 [iso3166]: http://en.wikipedia.org/wiki/ISO_3166
 [iso31662]: http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+
+It includes International Phone Number prefix for each country.
 
 Features
 --------
@@ -15,11 +17,7 @@ Features
 This library provides the following features:
 
   * A country can be selected from a list in a table view.
-  * The list can be searched using a search bar.
-  * Country flags are displayed in the image view of a table cell and they can
-    optionally be hidden.
-  * The flag size can be customised.
-  * The flag border color and size can be customised and optionally hidden.
+  * The list can be searched using a search bar. [TODO]
   * All the countries assigned a [ISO 3166-1 alpha-2][iso31662] two-letter code
     are available.
   * The list of countries presented by the controller can be filtered.
@@ -28,25 +26,11 @@ This library provides the following features:
     - Italian (it).
     - Spanish (es).
 
-The anatomy of the view presented by `EMCCountryPickerController` is the
-following:
-
-  * A search bar is anchored to the bottom of the top layout guide.
-  * A table view is anchored to the bottom of the search bar and to the top of
-    the bottom layout guide.
-  * The view is a full screen view designed to be presented modally.
-
-The table view presents the list of countries, sorted by name, in the current
-language of the user, if available, or in English.  A public domain image of
-a country's flag is shown at the left of the country name.
-
-![Main view with flags](/Screenshots/main-view-with-flags.png "Main View with Flags")
-
 Prerequisites
 -------------
 
-This library has been built with XCode 5.1.1 using iOS 7.1 as a build target.
-This library requires iOS >= 6.1.
+This library has been built with XCode 6 using iOS 8 as a build target.
+This library requires iOS >= 8
 
 This library requires [ARC][arc] (_Automatic Reference Counting_) and
 compilation will fail if ARC support is not available.
