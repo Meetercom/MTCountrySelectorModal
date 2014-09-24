@@ -90,4 +90,17 @@ static NSString * const kDefaultLocale = @"en";
     return _names[kDefaultLocale];
 }
 
+- (NSString *)countryPhoneCode
+{
+    NSString* phonecode;
+    @try {
+        phonecode =_names[@"phone"];
+    }
+    @catch (NSException *exception) {
+        phonecode = nil;
+    }
+    
+    return phonecode;
+}
+
 @end

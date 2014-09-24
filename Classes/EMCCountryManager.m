@@ -47,13 +47,12 @@ static EMCCountryManager *_countryManager;
 
 - (void)loadCountries
 {
-    NSString *countriesPath = [[NSBundle mainBundle] pathForResource:@"countries"
+    NSString *countriesPath = [[NSBundle mainBundle] pathForResource:@"country_data"
                                                               ofType:@"plist"];
     countryDict = [NSDictionary dictionaryWithContentsOfFile:countriesPath];
     countryKeysArr = [countryDict allKeys];
     
-    if (!countryDict || !countryKeysArr)
-    {
+    if (!countryDict || !countryKeysArr) {
         [NSException raise:@"Countries could not be loaded"
                     format:@"Either country dictionary [%@] or keys [%@] are null.", countryDict, countryKeysArr];
     }

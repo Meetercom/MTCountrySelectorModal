@@ -17,5 +17,5 @@
 - (NSString *)countryName;
 - (NSString *)countryNameWithLocale:(NSLocale *)locale;
 - (NSString *)countryNameWithLocaleIdentifier:(NSString *)localeIdentifier;
-
+- (NSString *)countryPhoneCode;
 @end
