@@ -232,7 +232,7 @@ static const CGFloat kEMCCountryCellControllerMinCellHeight = 80.0f;
         NSLog(@"Delegate is not set, the view controller will not be dismissed.");
     }
     
-    [self.countryDelegate countryController:self didSelectCountry:_selectedCountry];
+    [self.countryDelegate countryController:self didSelectCountry:_selectedCountry programatically:NO];
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -340,7 +340,7 @@ static const CGFloat kEMCCountryCellControllerMinCellHeight = 80.0f;
 
 #pragma mark - Country Management
 
-- (void)chooseCountry:(NSString *)countryCode
+- (void)chooseCountry:(NSString *)countryCode programatically:(BOOL)programatically
 {
     _selectedCountry = [[EMCCountryManager countryManager] countryWithCode:countryCode];
     
@@ -350,7 +350,7 @@ static const CGFloat kEMCCountryCellControllerMinCellHeight = 80.0f;
     {
         NSLog(@"Delegate is not set, the view controller will not be dismissed.");
     }else{
-        [self.countryDelegate countryController:self didSelectCountry:_selectedCountry];
+        [self.countryDelegate countryController:self didSelectCountry:_selectedCountry programatically:programatically];
     }
 
 }

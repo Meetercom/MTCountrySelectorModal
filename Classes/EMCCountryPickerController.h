@@ -12,7 +12,7 @@
 
 @interface EMCCountryPickerController : UIViewController<UITableViewDataSource, UITableViewDelegate, UISearchControllerDelegate, UISearchResultsUpdating>
 
-- (void)chooseCountry:(NSString *)countryCode;
+- (void)chooseCountry:(NSString *)countryCode programatically:(BOOL)programatically;
 
 @property (weak) id<EMCCountryDelegate> countryDelegate;
 @property (copy) NSSet *availableCountryCodes;

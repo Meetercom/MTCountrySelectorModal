@@ -44,7 +44,7 @@
 
 -(void)setup{
     self.backgroundColor = [UIColor clearColor];
-    self.textLabel.textColor = [UIColor whiteColor];
+    self.textLabel.textColor = [[UIColor whiteColor] colorWithAlphaComponent:.8f];
 //    self.textLabel.highlightedTextColor = [UIColor ]
     self.textLabel.font = [UIFont fontWithName:@"STHeitiSC-Light" size:24.0f];
     

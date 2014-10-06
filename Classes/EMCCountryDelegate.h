@@ -11,6 +11,6 @@
 
 @protocol EMCCountryDelegate <NSObject>
 
-- (void)countryController:(id)sender didSelectCountry:(EMCCountry *)chosenCountry;
+- (void)countryController:(id)sender didSelectCountry:(EMCCountry *)chosenCountry programatically:(BOOL)programatically; 
 
 @end
