@@ -44,13 +44,13 @@
 
 -(void)setup{
     self.backgroundColor = [UIColor clearColor];
-    self.textLabel.textColor = [[UIColor whiteColor] colorWithAlphaComponent:.8f];
+    self.textLabel.textColor = [[UIColor whiteColor] colorWithAlphaComponent:.4f];
 //    self.textLabel.highlightedTextColor = [UIColor ]
-    self.textLabel.font = [UIFont fontWithName:@"STHeitiSC-Light" size:24.0f];
+    self.textLabel.font = [UIFont systemFontOfSize:24.0f];
     
     UIView *bgColorView = [[UIView alloc] init];
 //    bgColorView.backgroundColor = [UIColor colorWithRed:1 green:0.149 blue:0 alpha:.9];
-    bgColorView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.5];
+    bgColorView.backgroundColor = [UIColor colorWithRed:10/255.0f green:10/255.0f blue:10/255.0f alpha:.5];
     self.selectionStyle = UITableViewCellSelectionStyleDefault;
     self.selectedBackgroundView = bgColorView;
 }
