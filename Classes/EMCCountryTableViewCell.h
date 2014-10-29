@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@interface UIFont (Addons)
++(UIFont *)lightSystemFontOfSize:(CGFloat)fontSize;
+@end
 
 @interface EMCCountryTableViewCell : UITableViewCell
 

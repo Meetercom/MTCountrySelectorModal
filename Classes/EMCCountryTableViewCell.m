@@ -46,7 +46,7 @@
     self.backgroundColor = [UIColor clearColor];
     self.textLabel.textColor = [[UIColor whiteColor] colorWithAlphaComponent:.4f];
 //    self.textLabel.highlightedTextColor = [UIColor ]
-    self.textLabel.font = [UIFont systemFontOfSize:24.0f];
+//    self.textLabel.font = [UIFont lightSystemFontOfSize:25.0f];
     
     UIView *bgColorView = [[UIView alloc] init];
 //    bgColorView.backgroundColor = [UIColor colorWithRed:1 green:0.149 blue:0 alpha:.9];
